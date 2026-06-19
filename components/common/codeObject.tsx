@@ -19,7 +19,7 @@ export default function CodeObject({
             <div className="pl-6">
                 {items.map((item) => (
                     <p key={item.name}>
-                        {item.name}: <span className="text-[#b5cea8] whitespace-pre-wrap">"{item.value}"</span>,
+                        <strong>{item.name}:</strong> <span className="text-[#b5cea8] whitespace-pre-wrap">"{item.value}"</span>,
                     </p>
                 ))}
             </div>
