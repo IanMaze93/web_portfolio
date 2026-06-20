@@ -9,7 +9,7 @@ export default function Experience() {
                 value="IanMaze/experience"
             />
 
-            <div className="">
+            <div>
             <CodeArray
                 title="positions"
                 items={[
