@@ -6,16 +6,21 @@ import Summary from "@/components/home/summary";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#002b36] text-white p-6">
-      <section className="flex border border-[#184b55] rounded-lg overflow-hidden">
-        <Nav activePage="home"/>
-        <div className="block w-100% flex-1">
-          <Summary/>
-          <Experience/>
+    <main className="h-screen bg-[#002b36] text-white p-6 pb-[30vh]">
+      
+      <section className="flex border border-[#184b55] rounded-lg overflow-hidden h-full">
+        <Nav activePage="home" />
+
+        <div className="flex-1 overflow-auto">
+          <Summary />
+          <Experience />
         </div>
-      <ExtraStuff />
+
+        <ExtraStuff />
       </section>
+
       <Terminal />
+
     </main>
   );
 }
