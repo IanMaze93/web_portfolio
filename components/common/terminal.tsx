@@ -114,8 +114,8 @@ export default function Terminal() {
 
     return (
         <div 
-          style={{ height, minHeight: '28vh' }} 
-          className='fixed bottom-0 left-0 right-0 bg-[#001e26] border-t border-[#184b55] flex flex-col'>
+          style={{ height, minHeight: '30vh' }} 
+          className='fixed bottom-1 w-468 bg-[#001e26] rounded-lg border-t border-[#184b55]'>
             {/* drag handle */}
             <div
               onMouseDown={handleMouseDown}
