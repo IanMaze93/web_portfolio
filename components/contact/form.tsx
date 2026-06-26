@@ -1,27 +1,38 @@
 import { useState } from "react";
-import Label from "../label";
+import Label from "../common/label";
 
 export function ContactForm() {
     const [outputMessage, setOutputMessage] = useState("");
     const [outputColor, setOutputColor] = useState("");
 
-    function submitForm(event:
-        React.SubmitEvent<HTMLFormElement>) {
-            event.preventDefault();
+    async function submitForm(event: React.SubmitEvent<HTMLFormElement>) {
+        event.preventDefault();
 
-            const formData = new FormData(event.currentTarget);
+        const formData = new FormData(event.currentTarget);
 
-            const data = {
+        const data = {
             name: formData.get("name"),
             email: formData.get("email"),
             message: formData.get("message"),
-            };
+        };
 
-            console.log(data);
+        const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
 
+        console.log(response)
+
+        if(response.ok) {
             setOutputColor('green');
             setOutputMessage('Message Sent!')
-        
+        } else {
+            setOutputColor('red');
+            setOutputMessage('Message Not Sent!')
+        }
     }
 
     return (
