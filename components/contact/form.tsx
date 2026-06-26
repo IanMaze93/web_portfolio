@@ -57,6 +57,7 @@ export function ContactForm() {
               placeholder="Your Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
           </p>
 
@@ -68,6 +69,7 @@ export function ContactForm() {
               placeholder="Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </p>
 
@@ -79,6 +81,7 @@ export function ContactForm() {
               placeholder="Your Message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             />
           </p>
 
