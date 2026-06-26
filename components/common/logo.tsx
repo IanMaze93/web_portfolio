@@ -1,7 +1,7 @@
 export default function Logo() {
   return (
     <pre className="font-mono text-center text-xs text-[#b5cea8] whitespace-pre">
-{`
+      {`
      __       ___      .__   __.    .___  ___.      ___      ________   _______ 
     |  |     /   \\     |  \\ |  |    |   \\/   |     /   \\    |       /  |   ____|
     |  |    /  ^  \\    |   \\|  |    |  \\  /  |    /  ^  \\   \`---/  /   |  |__   

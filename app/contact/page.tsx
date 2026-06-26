@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ContactList } from "@/components/contact/contactList";
 import { ContactForm } from "@/components/contact/form";
@@ -9,23 +9,18 @@ import Terminal from "@/components/common/terminal";
 export default function Contact() {
   return (
     <main className="h-screen bg-[#002b36] text-white p-6 pb-[30vh]">
-
       <section className="flex border border-[#184b55] rounded-lg overflow-hidden h-full">
-        
-        <Nav activePage="contact"/>
-       
-        <div className="flex-1 overflow-auto">
-            <Label value="IanMaze/contact" />
-            <ContactList />
-        
-        </div>
-      
-        <ContactForm />
-        
-      </section>
-      
-      <Terminal />
+        <Nav activePage="contact" />
 
+        <div className="flex-1 overflow-auto">
+          <Label value="IanMaze/contact" />
+          <ContactList />
+        </div>
+
+        <ContactForm />
+      </section>
+
+      <Terminal />
     </main>
   );
 }

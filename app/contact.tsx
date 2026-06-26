@@ -8,12 +8,12 @@ export default function Contact() {
   return (
     <main className="min-h-screen bg-[#002b36] text-white p-6">
       <section className="flex border border-[#184b55] rounded-lg overflow-hidden">
-        <Nav activePage="contact"/>
+        <Nav activePage="contact" />
         <div className="block w-100% flex-1">
-          <Summary/>
-          <Experience/>
+          <Summary />
+          <Experience />
         </div>
-      <ExtraStuff />
+        <ExtraStuff />
       </section>
       <Terminal />
     </main>
