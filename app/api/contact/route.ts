@@ -1,19 +1,19 @@
-import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
 export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json();
 
-    const resend = new Resend(process.env.RESEND_API_KEY)
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const {data, error} = await resend.emails.send({
-      from: 'Portfolio <onboarding@resend.dev>',
-      to: process.env.OUTLOOK_EMAIL ?? '',
+    const { data, error } = await resend.emails.send({
+      from: "Portfolio <onboarding@resend.dev>",
+      to: process.env.OUTLOOK_EMAIL ?? "",
       replyTo: email,
-      subject: 'Message from Portfolio',
-      html: `<p>${message}</p><br/><p>From: ${name} | ${email}</p>`
-    })
+      subject: "Message from Portfolio",
+      html: `<p>${message}</p><br/><p>From: ${name} | ${email}</p>`,
+    });
 
     if (error) {
       return NextResponse.json(
