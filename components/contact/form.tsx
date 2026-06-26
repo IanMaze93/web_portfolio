@@ -4,6 +4,9 @@ import Label from "../common/label";
 export function ContactForm() {
   const [outputMessage, setOutputMessage] = useState("");
   const [outputColor, setOutputColor] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   async function submitForm(event: React.SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -29,6 +32,9 @@ export function ContactForm() {
     if (response.ok) {
       setOutputColor("green");
       setOutputMessage("Message Sent!");
+      setName("");
+      setEmail("");
+      setMessage("");
     } else {
       setOutputColor("red");
       setOutputMessage("Message Not Sent!");
@@ -49,6 +55,8 @@ export function ContactForm() {
               className="border border-[#184b55] rounded-lg p-1 w-full"
               name="name"
               placeholder="Your Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </p>
 
@@ -58,6 +66,8 @@ export function ContactForm() {
               className="border border-[#184b55] rounded-lg p-1 w-full"
               name="email"
               placeholder="Your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </p>
 
@@ -67,6 +77,8 @@ export function ContactForm() {
               className="flex-1 border border-[#184b55] rounded-lg p-2 w-full h-30"
               name="message"
               placeholder="Your Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
           </p>
 
