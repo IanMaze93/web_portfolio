@@ -1,7 +1,7 @@
 "use client"
 
-import { ContactList } from "@/components/common/contact/contactList";
-import { ContactForm } from "@/components/common/contact/form";
+import { ContactList } from "@/components/contact/contactList";
+import { ContactForm } from "@/components/contact/form";
 import Label from "@/components/common/label";
 import Nav from "@/components/common/nav";
 import Terminal from "@/components/common/terminal";
