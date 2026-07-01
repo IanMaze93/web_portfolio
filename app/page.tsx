@@ -6,8 +6,8 @@ import Summary from "@/components/home/summary";
 
 export default function Home() {
   return (
-    <main className="h-screen bg-[#002b36] text-white p-6 pb-[30vh]">
-      <section className="flex border border-[#184b55] rounded-lg overflow-hidden h-full">
+    <main className="h-screen bg-[black] text-white p-6 pb-[30vh]">
+      <section className="flex border border-[#184b55] rounded-lg bg-[#002b36] overflow-hidden h-full">
         <Nav activePage="home" />
 
         <div className="flex-1 overflow-auto">
