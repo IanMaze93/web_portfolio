@@ -28,7 +28,7 @@ export default function Nav({ activePage }: NavProps) {
           alt="Home"
           width={20}
           height={20}
-          className="mr-1"
+          className="mr-1 w-auto h-auto"
         />{" "}
         IanMaze/home
       </Link>
@@ -43,7 +43,7 @@ export default function Nav({ activePage }: NavProps) {
           alt="Home"
           width={20}
           height={20}
-          className="mr-1"
+          className="mr-1 w-auto h-auto"
         />{" "}
         IanMaze/projects
       </Link>
@@ -58,7 +58,7 @@ export default function Nav({ activePage }: NavProps) {
           alt="Home"
           width={20}
           height={20}
-          className="mr-1"
+          className="mr-1 w-auto h-auto"
         />{" "}
         IanMaze/contact
       </Link>
