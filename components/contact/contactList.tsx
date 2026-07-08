@@ -44,7 +44,7 @@ export function ContactList() {
             <a href="mailto:mazeiandev@outlook.com">
               <Image
                 src="/envelope.png"
-                alt="linkedin icon"
+                alt="email icon"
                 width={100}
                 height={100}
               ></Image>
