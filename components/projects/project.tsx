@@ -28,12 +28,12 @@ export function Project({
             <a className="text-[#569cd6]" href={githubLink}>
               {githubLink}
             </a>
-            <p className="mt-4">{description}</p>
+            <p className="mt-4 whitespace-pre-wrap">{description}</p>
           </div>
         </div>
-        <div className="ml-auto">
+        <div className="w-1/2 flex items-center justify-center">
           <Image
-            className="max-w-800 max-h-700 border border-[#184b55] rounded-lg p-2"
+            className="max-w-full h-auto border border-[#184b55] rounded-lg p-2"
             src={imageSrc}
             alt={imageAlt}
             width={800}
