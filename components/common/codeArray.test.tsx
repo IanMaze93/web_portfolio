@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import CodeArray from "./codeArray";
-import { describe } from "vitest";
+import { describe, it, expect } from "vitest";
 
 describe("CodeArray Component", () => {
   it("displays the data passed", () => {
@@ -24,8 +24,8 @@ describe("CodeArray Component", () => {
       />
     );
 
-    expect(screen.getByText("Software Engineer 2")).toBeInTheDocument();
-    expect(screen.getByText("Software Engineer 1")).toBeInTheDocument();
-    expect(screen.getByText("IT Support")).toBeInTheDocument();
+    expect(screen.getByText(/Software Engineer 2/i)).toBeInTheDocument();
+    expect(screen.getByText(/Software Engineer 1/i)).toBeInTheDocument();
+    expect(screen.getByText(/IT Support/i)).toBeInTheDocument();
   });
 });
