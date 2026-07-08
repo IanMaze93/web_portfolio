@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import CodeArray from "./codeArray";
-import { describe } from "node:test";
+import { describe } from "vitest";
 
 describe("CodeArray Component", () => {
   it("displays the data passed", () => {
