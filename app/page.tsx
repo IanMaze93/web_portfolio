@@ -10,7 +10,7 @@ export default function Home() {
       <section className="flex border border-[#184b55] rounded-lg bg-[#002b36] overflow-hidden h-full">
         <Nav activePage="home" />
 
-        <div className="flex-1 overflow-auto">
+        <div className="flex-1">
           <Summary />
           <Experience />
         </div>
