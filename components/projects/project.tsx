@@ -22,7 +22,7 @@ export function Project({
     <div className="border-r border-[#184b55]">
       <Label value={label} />
       <div className="flex">
-        <div className="mr-4 border-r border-[#184b55]">
+        <div className="flex-1 mr-4 border-r border-[#184b55]">
           <div className="m-4">
             <h1 className="font-bold mb-2">{name}</h1>
             <a className="text-[#569cd6]" href={githubLink}>
@@ -31,9 +31,9 @@ export function Project({
             <p className="mt-4 whitespace-pre-wrap">{description}</p>
           </div>
         </div>
-        <div className="w-1/2 flex items-center justify-center">
+        <div className="flex-1 flex justify-center items-center p-4">
           <Image
-            className="max-w-full h-auto border border-[#184b55] rounded-lg p-2"
+            className="rounded-lg p-2 max-w-full h-auto"
             src={imageSrc}
             alt={imageAlt}
             width={800}
