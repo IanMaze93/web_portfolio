@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  lint-format-build:
+  lint-format-build-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,7 +28,7 @@ jobs:
           node-version: 22
           cache: pnpm
 
-      - name: Install Dependancies
+      - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Check Formatting
