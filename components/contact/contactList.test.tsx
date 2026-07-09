@@ -3,6 +3,19 @@ import { describe, it, expect } from "vitest";
 import { ContactList } from "./contactList";
 
 describe("Contact List Component", () => {
+  const originalEnv = process.env;
+
+  beforeEach(() => {
+    process.env = {
+      ...originalEnv,
+      NEXT_PUBLIC_OUTLOOK_EMAIL: "testianmaze@outlook.com",
+    };
+  });
+
+  afterEach(() => {
+    process.env = originalEnv;
+  });
+
   it("handles input correctly", () => {
     render(<ContactList />);
 
@@ -28,7 +41,7 @@ describe("Contact List Component", () => {
     const emailLink = screen.getByRole("link", {
       name: /mail/i,
     });
-    expect(emailLink).toHaveAttribute("href", "mailto:mazeiandev@outlook.com");
+    expect(emailLink).toHaveAttribute("href", "mailto:testianmaze@outlook.com");
     expect(screen.getByAltText("email icon")).toBeInTheDocument();
   });
 });
