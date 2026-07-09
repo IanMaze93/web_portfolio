@@ -13,7 +13,7 @@ function GithubGraphCalander() {
     <section className="p-6 text-white rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-4 text-center">
         <a
-          className="text-[#569cd6] border-b"
+          className="text-[#569cd6] border-b hover:text-blue-300"
           href="https://github.com/IanMaze93"
         >
           Github | Ian Maze

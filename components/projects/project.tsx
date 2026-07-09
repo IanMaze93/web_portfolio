@@ -25,7 +25,7 @@ export function Project({
         <div className="flex-1 mr-4 border-r border-[#184b55]">
           <div className="m-4">
             <h1 className="font-bold mb-2">{name}</h1>
-            <a className="text-[#569cd6]" href={githubLink}>
+            <a className="text-[#569cd6] hover:text-blue-300" href={githubLink}>
               {githubLink}
             </a>
             <p className="mt-4 whitespace-pre-wrap">{description}</p>
