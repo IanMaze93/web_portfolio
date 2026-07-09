@@ -3,7 +3,7 @@ import CodeObject from "./codeObject";
 import { describe, it, expect } from "vitest";
 
 describe("CodeObject Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(
       <CodeObject
         title="details"

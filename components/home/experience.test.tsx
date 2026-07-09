@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import Experience from "./experience";
 
 describe("Experience Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(<Experience />);
 
     // Detect Label

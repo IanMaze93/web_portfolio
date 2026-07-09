@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import Summary from "./summary";
 
 describe("Summary Content Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(<Summary />);
 
     // Detect Label

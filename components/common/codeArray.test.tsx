@@ -3,7 +3,7 @@ import CodeArray from "./codeArray";
 import { describe, it, expect } from "vitest";
 
 describe("CodeArray Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(
       <CodeArray
         title="positions"
