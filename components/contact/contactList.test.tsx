@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import { ContactList } from "./contactList";
 
 describe("Contact List Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(<ContactList />);
 
     // Detect Contact Links

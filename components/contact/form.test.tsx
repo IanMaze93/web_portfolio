@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import { ContactForm } from "./form";
 
 describe("Contact Form Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(<ContactForm />);
 
     // Detect Label

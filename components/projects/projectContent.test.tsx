@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import ProjectContent from "./projectContent";
 
 describe("Project Content Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(<ProjectContent />);
 
     // -- Project 1

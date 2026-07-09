@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import ExtraStuff from "./extra";
 
 describe("Extra Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(<ExtraStuff />);
 
     // Detect Github Graph

@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import { Project } from "./project";
 
 describe("Project Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(
       <Project
         label="IanMaze/projects/web_portfolio"

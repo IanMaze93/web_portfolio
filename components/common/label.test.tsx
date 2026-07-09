@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import Label from "./label";
 
 describe("Label Component", () => {
-  it("displays the data passed", () => {
+  it("handles input correctly", () => {
     render(<Label value="IanMaze/experience" />);
 
     expect(screen.getByText(/IanMaze/i)).toBeInTheDocument();
