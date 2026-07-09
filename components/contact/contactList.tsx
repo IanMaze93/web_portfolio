@@ -18,6 +18,7 @@ I look forward to hearing from you.
 }
 
 export function ContactList() {
+  const devEmail = process.env.NEXT_PUBLIC_OUTLOOK_EMAIL ?? "";
   return (
     <div className="m-6 block">
       <div className="flex">
@@ -41,7 +42,7 @@ export function ContactList() {
                 height={100}
               ></Image>
             </Link>
-            <a href="mailto:mazeiandev@outlook.com">
+            <a href={`mailto:${devEmail}`}>
               <Image
                 src="/envelope.png"
                 alt="email icon"
