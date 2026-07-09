@@ -6,7 +6,10 @@ describe("Contact List Component", () => {
   const originalEnv = process.env;
 
   beforeEach(() => {
-    process.env = { ...originalEnv, OUTLOOK_EMAIL: "testianmaze@outlook.com" };
+    process.env = {
+      ...originalEnv,
+      NEXT_PUBLIC_OUTLOOK_EMAIL: "testianmaze@outlook.com",
+    };
   });
 
   afterEach(() => {
