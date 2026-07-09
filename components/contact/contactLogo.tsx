@@ -15,3 +15,21 @@ export default function ContactLogo() {
     </pre>
   );
 }
+
+const formLogo = String.raw`
+ _______   ______   .______    .___  ___. 
+ |   ____| /  __  \  |   _  \   |   \/   | 
+ |  |__   |  |  |  | |  |_)  |  |  \  /  | 
+ |   __|  |  |  |  | |      /   |  |\/|  | 
+ |  |     |  '--'  | |  |\  \--.|  |  |  | 
+|__|      \______/  | _| '.___||__|  |__|
+
+`;
+
+export function ContactFormLogo() {
+  return (
+    <pre className="font-mono text-xs text-[#b5cea8] whitespace-pre text-center">
+      {formLogo}
+    </pre>
+  );
+}

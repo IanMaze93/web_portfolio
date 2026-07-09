@@ -19,7 +19,7 @@ export default function Nav({ activePage }: NavProps) {
       <Label value="File Explorer"></Label>
 
       <Link
-        className="p-3 flex justify-content text-[#569cd6]"
+        className="p-3 flex justify-content text-[#569cd6] hover:text-blue-300"
         style={{ textDecoration: isActivePage("home", activePage) }}
         href="/"
       >
@@ -34,7 +34,7 @@ export default function Nav({ activePage }: NavProps) {
       </Link>
 
       <Link
-        className="p-3 flex justify-content text-[#569cd6]"
+        className="p-3 flex justify-content text-[#569cd6] hover:text-blue-300"
         style={{ textDecoration: isActivePage("projects", activePage) }}
         href="/projects"
       >
@@ -49,7 +49,7 @@ export default function Nav({ activePage }: NavProps) {
       </Link>
 
       <Link
-        className="p-3 flex justify-content text-[#569cd6]"
+        className="p-3 flex justify-content text-[#569cd6] hover:text-blue-300"
         style={{ textDecoration: isActivePage("contact", activePage) }}
         href="/contact"
       >

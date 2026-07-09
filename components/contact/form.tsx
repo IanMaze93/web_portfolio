@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Label from "../common/label";
+import { ContactFormLogo } from "./contactLogo";
 
 export function ContactForm() {
   const [outputMessage, setOutputMessage] = useState("");
@@ -46,7 +47,7 @@ export function ContactForm() {
       <Label value="IanMaze/contactForm" />
 
       <form onSubmit={submitForm} className="p-2">
-        <h1 className="text-4xl font-bold text-center m-10">Contact Form</h1>
+        <ContactFormLogo />
 
         <div className="bg-[#001e26] border border-[#184b55] p-5 rounded-lg">
           <p className="font-bold mb-4">
