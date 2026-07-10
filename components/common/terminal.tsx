@@ -6,7 +6,7 @@ import Label from "./label";
 export default function Terminal() {
   const [terminalCommand, setTerminalCommand] = useState("");
   const [terminalOutput, setTerminalOutput] = useState("");
-  const [height, setHeight] = useState(250);
+  const [height, setHeight] = useState(240);
   const startY = useRef(0);
   const startHeight = useRef(0);
 
@@ -116,8 +116,8 @@ export default function Terminal() {
 
   return (
     <div
-      style={{ height, minHeight: "30vh" }}
-      className="fixed bottom-1 w-468 bg-[#001e26] rounded-lg border-t border-[#184b55]"
+      style={{ height, minHeight: "25vh" }}
+      className="md:fixed bottom-0 left-6 right-6 bg-[#001e26] rounded-lg border border-[#184b55] overflow-hidden"
     >
       {/* drag handle */}
       <div
@@ -125,7 +125,7 @@ export default function Terminal() {
         className="h-1 cursor-row-resize bg-[#184b55]"
       />
       <Label value="Terminal" />
-      <div className="flex-1 overflow-y-auto p-2">
+      <div className="xl:flex-1 p-2 text-xs xl:text-base">
         <pre>
           IanMaze-PC/Code/web_portfolio:~${" "}
           <span className="text-green-500">--show-commands</span>

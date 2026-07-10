@@ -8,11 +8,11 @@ import Terminal from "@/components/common/terminal";
 
 export default function Contact() {
   return (
-    <main className="h-screen bg-[black] text-white p-6 pb-[30vh]">
-      <section className="flex border border-[#184b55] rounded-lg bg-[#002b36] overflow-hidden h-full">
+    <main className="h-screen bg-[black] text-white p-6">
+      <section className="xl:flex border border-[#184b55] rounded-lg bg-[#002b36] xl:overflow-hidden xl:h-full">
         <Nav activePage="contact" />
 
-        <div className="flex-1 overflow-auto">
+        <div className="xl:flex-1 overflow-auto">
           <Label value="IanMaze/contact" />
           <ContactList />
         </div>

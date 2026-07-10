@@ -15,7 +15,7 @@ function isActivePage(page: string, activePage: string): string {
 
 export default function Nav({ activePage }: NavProps) {
   return (
-    <nav className="w-50 bg-[#001e26] border-r border-[#184b55]">
+    <nav className="w-full xl:w-50 bg-[#001e26] border-r border-[#184b55]">
       <Label value="File Explorer"></Label>
 
       <Link
