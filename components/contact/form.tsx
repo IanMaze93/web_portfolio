@@ -43,7 +43,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="block border-l border-[#184b55] w-200">
+    <div className="block border-l border-[#184b55] xl:w-200">
       <Label value="IanMaze/contactForm" />
 
       <form onSubmit={submitForm} className="p-2">

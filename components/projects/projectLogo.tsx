@@ -10,7 +10,7 @@ const logo = String.raw`
 
 export default function ProjectsLogo() {
   return (
-    <pre className="m-4 font-mono text-xs text-[#b5cea8] whitespace-pre">
+    <pre className="m-4 font-mono text-[#b5cea8] text-[5px] sm:text-[7px] md:text-[9px] lg:text-xs">
       {logo}
     </pre>
   );

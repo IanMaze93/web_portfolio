@@ -10,14 +10,14 @@ const logo = String.raw`
 
 export default function ContactLogo() {
   return (
-    <pre className="font-mono text-xs text-[#b5cea8] whitespace-pre text-center">
+    <pre className="font-mono text-[#b5cea8] text-[5px] sm:text-[7px] md:text-[9px] lg:text-xs text-center">
       {logo}
     </pre>
   );
 }
 
 const formLogo = String.raw`
- _______   ______   .______    .___  ___. 
+  _______   ______   .______    .___  ___. 
  |   ____| /  __  \  |   _  \   |   \/   | 
  |  |__   |  |  |  | |  |_)  |  |  \  /  | 
  |   __|  |  |  |  | |      /   |  |\/|  | 
@@ -28,7 +28,7 @@ const formLogo = String.raw`
 
 export function ContactFormLogo() {
   return (
-    <pre className="font-mono text-xs text-[#b5cea8] whitespace-pre text-center">
+    <pre className="scale-50 md:scale-75 text-[#b5cea8] lg:text-base font-mono text-center">
       {formLogo}
     </pre>
   );

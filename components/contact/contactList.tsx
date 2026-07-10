@@ -21,7 +21,7 @@ export function ContactList() {
   const devEmail = process.env.NEXT_PUBLIC_OUTLOOK_EMAIL ?? "";
   return (
     <div className="m-6 block">
-      <div className="flex">
+      <div className="xl:flex">
         <div className="block">
           <ContactLogo />
           <p className="whitespace-pre-wrap">{getContactText()}</p>

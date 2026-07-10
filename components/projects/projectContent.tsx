@@ -47,7 +47,7 @@ upload workflow.
 
 export default function projectContent() {
   return (
-    <div className="h-140 overflow-y-auto">
+    <div className="overflow-y-auto">
       <div className="flex justify-center">
         <ProjectsLogo />
       </div>

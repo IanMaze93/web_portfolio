@@ -11,7 +11,7 @@ export default function CodeArray({ title, items }: CodeArrayProps) {
   return (
     <div className="p-4">
       <p className="text-[#569cd6]">const {title} = &#91;</p>
-      <div className="pl-4 flex gap-30">
+      <div className="pl-4 xl:flex gap-30">
         {items.map((item) => (
           <div className="pl-3" key={randomUUID()}>
             <p className="text-[#569cd6]">&#123;</p>
