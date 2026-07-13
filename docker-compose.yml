@@ -1,0 +1,15 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: docker/site.Dockerfile
+    container_name: portfolio
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      OUTLOOK_EMAIL: ${OUTLOOK_EMAIL}
+      NEXT_PUBLIC_OUTLOOK_EMAIL: ${OUTLOOK_EMAIL}
+      RESEND_API_KEY: ${RESEND_API_KEY}
