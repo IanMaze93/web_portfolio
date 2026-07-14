@@ -80,8 +80,8 @@ export default function Terminal() {
 
   function downloadResume() {
     const link = document.createElement("a");
-    link.href = "/resume.docx";
-    link.download = "resume.docx";
+    link.href = "/resume.pdf";
+    link.download = "resume.pdf";
 
     document.body.appendChild(link);
     link.click();
