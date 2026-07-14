@@ -38,19 +38,19 @@ function TerminalCommands() {
 
       <ul className="p-8">
         <li>
-          <p>
+          <p className="mb-2">
             <strong>--show-commands</strong>{" "}
             <span className="text-green-500">&#47;&#47; Display Commands</span>
           </p>
         </li>
         <li>
-          <p>
+          <p className="mb-2">
             <strong>--clear</strong>{" "}
             <span className="text-green-500">&#47;&#47; Clears Terminal</span>
           </p>
         </li>
         <li>
-          <p>
+          <p className="mb-2">
             <strong>--verify-candidate</strong>{" "}
             <span className="text-green-500">
               &#47;&#47; Verify My Candidacy
@@ -58,7 +58,7 @@ function TerminalCommands() {
           </p>
         </li>
         <li>
-          <p>
+          <p className="mb-2">
             <strong>--download-resume</strong>{" "}
             <span className="text-green-500">&#47;&#47; Download Resume</span>
           </p>

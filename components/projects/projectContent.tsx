@@ -78,6 +78,8 @@ export default function projectContent() {
         imageSrc="/s3_upload.png"
         imageAlt="S3 Uploader"
       />
+
+      <div className="xl:mt-50"></div>
     </div>
   );
 }
