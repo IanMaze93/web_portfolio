@@ -1,6 +1,6 @@
 export default function Logo() {
   return (
-    <pre className="w-1/4 scale-50 md:scale-75 text-[#b5cea8] md:w-auto text-center font-mono">
+    <pre className="m-4 font-mono text-[#b5cea8] text-[5px] sm:text-[7px] md:text-[9px] lg:text-xs lg:text-center">
       {`
      __       ___      .__   __.    .___  ___.      ___      ________   _______ 
     |  |     /   \\     |  \\ |  |    |   \\/   |     /   \\    |       /  |   ____|
