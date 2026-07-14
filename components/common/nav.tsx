@@ -40,7 +40,7 @@ export default function Nav({ activePage }: NavProps) {
       >
         <Image
           src="/folder_icon.png"
-          alt="Home"
+          alt="Projects"
           width={20}
           height={20}
           className="mr-1 w-auto h-auto"
@@ -55,7 +55,7 @@ export default function Nav({ activePage }: NavProps) {
       >
         <Image
           src="/folder_icon.png"
-          alt="Home"
+          alt="Contact"
           width={20}
           height={20}
           className="mr-1 w-auto h-auto"
