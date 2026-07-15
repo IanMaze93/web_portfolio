@@ -1,6 +1,19 @@
 import { Project } from "./project";
 import ProjectsLogo from "./projectLogo";
 
+function getDuckTapeText() {
+  return `
+Duck Tape is my personal developer toolkit built with Python and Typer. It brings together the 
+scripts and workflows I use most often into a single command-line interface, replacing repetitive 
+terminal commands with simple, organized commands.
+
+The tool automates everyday development tasks such as deploying Docker applications, connecting to 
+remote servers over SSH, managing projects, and generating development utilities. As my home lab and 
+personal projects have grown, Duck Tape has become the central hub I use to streamline my workflow and 
+keep repetitive tasks consistent.
+  `.trim();
+}
+
 function getPortfolioText() {
   return `
 This portfolio was built from the ground up using Next.js, React, TypeScript, and Tailwind CSS 
@@ -59,6 +72,15 @@ export default function projectContent() {
         githubLink="https://github.com/IanMaze93/web_portfolio"
         imageSrc="/web_portfolio.png"
         imageAlt="Web Portfolio"
+      />
+
+      <Project
+        label="IanMaze/projects/duck-tape"
+        name="Duck-Tape"
+        description={getDuckTapeText()}
+        githubLink="https://github.com/IanMaze93/duck-tape"
+        imageSrc="/duck-tape_logo.png"
+        imageAlt="Duck Tape"
       />
 
       <Project
