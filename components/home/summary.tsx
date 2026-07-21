@@ -4,10 +4,9 @@ import Logo from "../common/logo";
 
 function getObjectiveText(): string {
   return `
-Results-driven software engineer with expertise in backend development using SST, TypeScript, and AWS. 
-Skilled in creating scalable, serverless solutions, event-driven architectures, and robust APIs. 
-Seeking to contribute technical expertise and problem-solving abilities to a dynamic team focused 
-on innovation and growth.
+Software engineer specializing in backend platforms, AI applications, cloud infrastructure, and distributed systems. 
+Passionate about building scalable software from enterprise APIs and event-driven architectures to self-hosted AI platforms, 
+developer tooling, and Linux infrastructure.
   `.trim();
 }
 
