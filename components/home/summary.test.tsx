@@ -15,6 +15,10 @@ describe("Summary Content Component", () => {
     expect(screen.getByText('"Software Engineer"')).toBeInTheDocument();
     // -- Detect Objective
     expect(screen.getByText(/objective/i)).toBeInTheDocument();
-    expect(screen.getByText(/Results-driven/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        /Software engineer specializing in backend platforms, AI applications, cloud infrastructure, and distributed systems/i
+      )
+    ).toBeInTheDocument();
   });
 });
