@@ -79,13 +79,23 @@ export default function Terminal() {
   }
 
   function downloadResume() {
-    const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "resume.pdf";
+    const pdfLink = document.createElement("a");
+    pdfLink.href = "/resume.pdf";
+    pdfLink.download = "resume.pdf";
 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const docxLink = document.createElement("a");
+    docxLink.href = "/resume.docx";
+    docxLink.download = "resume.docx";
+
+    // Append the link to the document body and
+    // trigger a click event to initiate the download
+    document.body.appendChild(pdfLink);
+    pdfLink.click();
+    document.body.removeChild(pdfLink);
+
+    document.body.appendChild(docxLink);
+    docxLink.click();
+    document.body.removeChild(docxLink);
   }
 
   function handleTerminalCommand(command: string) {
