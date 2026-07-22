@@ -11,6 +11,7 @@
 !.yarn/versions
 
 public/resume.pdf
+public/resume.docx
 
 # testing
 /coverage
