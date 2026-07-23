@@ -67,7 +67,7 @@ export function ContactForm() {
       }
     } catch (error) {
       setOutputColor("red");
-      setOutputMessage("An error occurred while sending the message.");
+      setOutputMessage(`An error occurred while sending the message. ${error}`);
     }
   }
 
