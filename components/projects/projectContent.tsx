@@ -58,6 +58,20 @@ upload workflow.
 `.trim();
 }
 
+function getTheFeedText() {
+  return `
+The Feed is a full-stack, topic-based news aggregator designed to bring the content you care 
+about into one place without ads or social media distractions. Users can create their own topics, 
+add sources from Google News and Reddit, and have new stories automatically collected and organized 
+into their personalized feed.
+
+Built with Next.js, TypeScript, FastAPI, and MongoDB, The Feed includes user authentication, automated 
+feed refreshing, topic and source management, and a fully responsive interface for desktop and mobile. 
+The entire application is containerized with Docker and self-hosted on my home server.
+
+`.trim();
+}
+
 export default function projectContent() {
   return (
     <div className="overflow-y-auto">
@@ -66,10 +80,33 @@ export default function projectContent() {
       </div>
 
       <Project
+        label="IanMaze/projects/the_feed"
+        name="The Feed"
+        description={getTheFeedText()}
+        githubLinks={[
+          {
+            label: "Feed Backend",
+            url: "https://github.com/IanMaze93/Feed-Backend",
+          },
+          {
+            label: "Feed Frontend",
+            url: "https://github.com/IanMaze93/feed-frontend",
+          },
+        ]}
+        imageSrc="/the-feed.png"
+        imageAlt="The Feed"
+      />
+
+      <Project
         label="IanMaze/projects/web_portfolio"
         name="Web Portfolio"
         description={getPortfolioText()}
-        githubLink="https://github.com/IanMaze93/web_portfolio"
+        githubLinks={[
+          {
+            label: "Web Portfolio",
+            url: "https://github.com/IanMaze93/web_portfolio",
+          },
+        ]}
         imageSrc="/web_portfolio.png"
         imageAlt="Web Portfolio"
       />
@@ -78,7 +115,9 @@ export default function projectContent() {
         label="IanMaze/projects/duck-tape"
         name="Duck-Tape"
         description={getDuckTapeText()}
-        githubLink="https://github.com/IanMaze93/duck-tape"
+        githubLinks={[
+          { label: "Duck-Tape", url: "https://github.com/IanMaze93/duck-tape" },
+        ]}
         imageSrc="/duck-tape_logo.png"
         imageAlt="Duck Tape"
       />
@@ -87,7 +126,12 @@ export default function projectContent() {
         label="IanMaze/projects/ask_alfred"
         name="Ask Alfred (Batman Fan Project)"
         description={getAlfredText()}
-        githubLink="https://github.com/IanMaze93/Alfred-Virtual-Assistant"
+        githubLinks={[
+          {
+            label: "Ask Alfred",
+            url: "https://github.com/IanMaze93/Alfred-Virtual-Assistant",
+          },
+        ]}
         imageSrc="/alfred.png"
         imageAlt="Ask Alfred"
       />
@@ -96,7 +140,12 @@ export default function projectContent() {
         label="IanMaze/projects/s3_uploader"
         name="S3 Uploader"
         description={getS3UploaderText()}
-        githubLink="https://github.com/IanMaze93/s3Uploader"
+        githubLinks={[
+          {
+            label: "S3 Uploader",
+            url: "https://github.com/IanMaze93/s3Uploader",
+          },
+        ]}
         imageSrc="/s3_upload.png"
         imageAlt="S3 Uploader"
       />
