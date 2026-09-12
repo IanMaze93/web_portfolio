@@ -9,16 +9,24 @@ describe("Project Component", () => {
         label="IanMaze/projects/web_portfolio"
         name="Web Portfolio"
         description="test"
-        githubLink="https://github.com/IanMaze93/web_portfolio"
+        githubLinks={[
+          {
+            label: "Web Portfolio",
+            url: "https://github.com/IanMaze93/web_portfolio",
+          },
+        ]}
         imageSrc="/web_portfolio.png"
         imageAlt="Web Portfolio"
       />
     );
 
-    expect(screen.getByText(/Web Portfolio/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /Web Portfolio/i })
+    ).toBeInTheDocument();
     expect(screen.getByAltText(/Web Portfolio/i)).toBeInTheDocument();
     expect(screen.getByText(/test/i)).toBeInTheDocument();
-    expect(screen.getByText(/github/i)).toBeInTheDocument();
-    expect(screen.getByText(/IanMaze93/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /Web Portfolio/i })
+    ).toHaveAttribute("href", "https://github.com/IanMaze93/web_portfolio");
   });
 });
