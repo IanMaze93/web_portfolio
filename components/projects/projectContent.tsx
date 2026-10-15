@@ -85,12 +85,8 @@ export default function projectContent() {
         description={getTheFeedText()}
         githubLinks={[
           {
-            label: "Feed Backend",
-            url: "https://github.com/IanMaze93/Feed-Backend",
-          },
-          {
-            label: "Feed Frontend",
-            url: "https://github.com/IanMaze93/feed-frontend",
+            label: "The Feed",
+            url: "https://github.com/IanMaze93/The-Feed",
           },
         ]}
         imageSrc="/the-feed.png"
